@@ -1,8 +1,10 @@
-﻿using System;
+﻿using NewDataAccess;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using NewBusiness;
 
 namespace Assignment_1.Controllers
 {
@@ -32,13 +34,21 @@ namespace Assignment_1.Controllers
 
             return View();
         }
+
+        public ActionResult Assignment_two()
+        {
+            ViewBag.Message = "Display data for assignment two";
+
+            return View();
+        }
+
         public ActionResult DisplayData()
         {
-            ViewBag.Message = "Individual Demographics";
+            ViewBag.Message = "Employees";
 
             //Get the Demographics Data from Business Layer
-            var IndivDemo = Demographics.GetIndividulDemographicData();
-            //var IndivDemos = Demographics.GetDemoForIndiv();
+            var IndivDemo=NewBusinessClass.EmployeeInformation();
+
             return View(IndivDemo);
 
         }

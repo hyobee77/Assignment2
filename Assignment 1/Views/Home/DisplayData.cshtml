@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Models.TestModelClass>
+﻿@model IEnumerable<NewModel.EmployeeInformation>
 @using GridMvc.Html
 
 <!DOCTYPE html>
@@ -14,12 +14,12 @@
         @if (Model != null && Model.Count() > 0)
         {
             <div class="panel panel-primary pre-scrollable">
-                @Html.Grid(Model).Named("EmployeeInformationData").Columns(columns =>
+                @Html.Grid(Model).Named("Employees").Columns(columns =>
                 {
                     columns.Add(col => col.Emp_no).Titled("Employee ID");
-                    columns.Add(col => col.First_name).Titled("First Name");
-                    columns.Add(col => col.Last_name).Titled("Last Name");
-                    columns.Add(col => col.Gender).Titled("Gender");
+                    columns.Add(col => col.FirstName).Titled("First Name");
+                    columns.Add(col => col.LastName).Titled("Last Name");
+                    columns.Add(col => col.Sex).Titled("Gender");
                     columns.Add(col => col.Hire_date).Titled("Hire Date ");
                 }).WithPaging(4).Sortable()
             </div>

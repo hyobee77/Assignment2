@@ -1,0 +1,6 @@
+C:\Users\Lingbo Kou\Documents\github\Assignment2\NewModel\bin\Release\NewModel.dll
+C:\Users\Lingbo Kou\Documents\github\Assignment2\NewModel\bin\Release\NewModel.pdb
+C:\Users\Lingbo Kou\Documents\github\Assignment2\NewModel\obj\Release\NewModel.csprojAssemblyReference.cache
+C:\Users\Lingbo Kou\Documents\github\Assignment2\NewModel\obj\Release\NewModel.csproj.CoreCompileInputs.cache
+C:\Users\Lingbo Kou\Documents\github\Assignment2\NewModel\obj\Release\NewModel.dll
+C:\Users\Lingbo Kou\Documents\github\Assignment2\NewModel\obj\Release\NewModel.pdb

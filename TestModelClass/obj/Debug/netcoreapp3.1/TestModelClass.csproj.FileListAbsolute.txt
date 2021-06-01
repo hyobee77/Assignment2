@@ -1,4 +1,0 @@
-C:\Users\orang\Documents\ISEM\551\A1\A1\TestModelClass\obj\Debug\netcoreapp3.1\TestModelClass.csprojAssemblyReference.cache
-C:\Users\orang\Documents\ISEM\551\A1\A1\TestModelClass\obj\Debug\netcoreapp3.1\TestModelClass.AssemblyInfoInputs.cache
-C:\Users\orang\Documents\ISEM\551\A1\A1\TestModelClass\obj\Debug\netcoreapp3.1\TestModelClass.AssemblyInfo.cs
-C:\Users\orang\Documents\ISEM\551\A1\A1\TestModelClass\obj\Debug\netcoreapp3.1\TestModelClass.csproj.CoreCompileInputs.cache

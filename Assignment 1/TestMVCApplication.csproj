@@ -45,6 +45,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="GridMvc, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\GridMvc.dll.1.0.4\lib\net45\GridMvc.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -120,9 +123,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -164,6 +165,8 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Assignment_one.cshtml" />
     <Content Include="Views\Home\DisplayData.cshtml" />
+    <Content Include="Views\Shared\_Grid.cshtml" />
+    <Content Include="Views\Shared\_GridPager.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -181,6 +184,23 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NewBusiness\NewBusiness.csproj">
+      <Project>{2be9d3ae-c272-4442-8a0c-ac7eabb4f907}</Project>
+      <Name>NewBusiness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NewDataAccess\NewDataAccess.csproj">
+      <Project>{959B5E41-CF51-42C7-B529-43A62E759DAA}</Project>
+      <Name>NewDataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NewModel\NewModel.csproj">
+      <Project>{c7992907-deb7-4cbc-8b4b-7d33b0aaf75b}</Project>
+      <Name>NewModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
